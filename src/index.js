@@ -17,10 +17,10 @@ class ECharts extends Component {
   };
 
   static defaultProps = {
-    onData: () => {},
+    onData: () => { },
     legacyMode: false,
     canvas: false,
-    onLoadEnd: () => {},
+    onLoadEnd: () => { },
     backgroundColor: "rgba(0, 0, 0, 0)"
   };
 
@@ -168,6 +168,7 @@ class ECharts extends Component {
           allowUniversalAccessFromFileURLs
           mixedContentMode="always"
           onLoadEnd={this.onLoadEnd}
+          androidHardwareAccelerationDisabled={true}
         />
       </View>
     );
